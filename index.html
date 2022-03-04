@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="descrption" content="Concours pour Voyager">
+    <meta name="keywords" content="Voyager">
+    <meta name="author" content="Isaac Dubé">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage de rêve</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="layout-page">
+
+        <picture class="picture__entete">
+            <source srcset="./images/bandeau_600.jpg" media="(max-width:600px)">
+            <source srcset="./images/bandeau_1200.jpg" media="(min-width:601px)">
+            <img class="picture__img" src="./images/bandeau_1200.jpg" alt="Concours ICI Première. Voyage de rêve. Au menu. Écoutez Gravel le
+            Matin en semaine 5h30 au 95,1. Courez la chance de gagner un crédit
+            voyage de 20 000$ ! Commandité par Ici Première, Montréal en Lumière,
+            Bell et Voyages Traditours circuits et croisières.">
+        </picture>
+
+        <h1 class="h1">Concours</h1>
+
+        <p class="texte-presentation">
+            Complétez le coupon de participation et répondez à la question du jour ci-dessous.<br>
+        </p>
+        30 finalistes accompagnés seront invités le jeudi 1er mars au restaurant
+        Blumenthal pour un petit déjeuner préparé par le chef Rémi Brunelle. Parmi
+        les finalistes présents, un grand gagnant s’envolera vers la destination de
+        son choix!
+        </p>
+        <p>
+            Vous avez jusqu'au vendredi 9 février à midi pour participer. Bonne chance
+            tous!
+        </p>
+
+        <fieldset>
+            <legend class="h2">Coupon de participation</legend>
+            <fieldset>
+                <legend>Nom complet</legend>
+                <p>
+                    <label for="prénom">Prénom</label>
+                    <input for="texte" name="prénom" id="prénom">
+                </p>
+                <p>
+                    <label for="nom">Nom</Label>
+                    <input type="texte" name="nom" id="nom">
+                </p>
+                <p class="message-erreur">
+                </p>
+            </fieldset>
+            <p>
+                <label for="adresse">Adresse</Label>
+                <input type="texte" name="adresse" id="adresse">
+            </p>
+            <p class="message-erreur">
+            </p>
+            <p>
+                <label for="ville">Ville</label>
+                <input type="texte" name="ville" id="ville">
+            </p>
+            <p class="message-erreur">
+            </p>
+            <p>
+                <label for="pays">Pays</label>
+                <select name="pays" id="pays">
+                    <option value="province">Province</option>
+                    <option value="etat">État</option>
+                </select>
+            </p>
+            <p class="message-erreur">
+            </p>
+            <p>
+                <label for="codepostal">Code postal (X1X 1X1)</label>
+                <input type="text" id="codepostal" name="codepostal" aria-label="111">
+            </p>
+            <p class="message-erreur">
+            </p>
+            <p>
+                <label for="courriel">Courriel</label>
+                <input type="courriel" name="courriel" id="courriel">
+            </p>
+            <p class="message-erreur">
+            </p>
+            <fieldset>
+                <legend>Téléphone (indicatif - numéro)</legend>
+                <p>
+                    <label for="indicatif">Indicatif</label>
+                    <input type="tel" name="indicatif" id="indicatif" aria-label="111">
+                </p>
+                <p>
+                    -
+                </p>
+                <p>
+                    <label for="numéro">Numéro</Label>
+                    <input type="tel" name="numéro" id="numéro" aria-label="1111-111">
+                </p>
+                <p class="message-erreur">
+                </p>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend class="h3">Question du jour</legend>
+            <fieldset>
+                <legend>Date à laquelle la question a été posée</legend>
+                <p>
+                    <label for="jour">Jour</Label>
+                    <input type="text" name="jour" id="jour">
+                </p>
+                <p>
+                    <label for="Mois">Mois</label>
+                    <select name="Mois" id="Mois">
+                        <option value="Janvier">Janvier</option>
+                        <option value="Fevrier">Février</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Avril">Avril</option>
+                        <option value="Mai">Mai</option>
+                        <option value="Juin">Juin</option>
+                        <option value="Juillet">Juillet</option>
+                        <option value="Aout">Août</option>
+                        <option value="Septembre">Septembre</option>
+                        <option value="Octobre">Octobre</option>
+                        <option value="Novembre">Novembre</option>
+                        <option value="Décembre">Décembre</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="annee">Année</Label>
+                    <input type="text" name="annee" id="annee">
+                </p>
+                <p class="message-erreur">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Lequel de ces monuments est un mausolée</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="If" id="If">
+                        <label for="If"><img class="image-question" src="./images/chateaudIf-small.jpg">Le château de
+                            d'If</Label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Luxembourg" id="Luxembourg">
+                        <label for="Luxembourg"><img class="image-question" src="./images/palaisluxembourg-small.jpg">Le
+                            palais de Luxembourg</Label>
+                    </li>
+                    <li>
+                        <input type="radio" name="taj_Mahal" id="taj_Mahal">
+                        <label for="taj_Mahal"><img class="image-question" src="./images/tajmahal-small.jpg">Le Taj
+                            Mahal</Label>
+                    </li>
+                </ul>
+                <p class="message-erreur">
+                </p>
+            </fieldset>
+        </fieldset>
+        <p>
+            <input type="checkbox" name="reglements" id="reglements">
+            <label for="reglements">J'ai lu et j'accepte le <a href="">règlement du concours</a> et je confirme avoir
+                atteint l'âge de majorité dans ma province de résidence</Label>
+        </p>
+        <p class="message-erreur">
+        </p>
+        <p>
+            <input type="checkbox" name="reglements" id="reglements">
+            <label for="reglements">Oui j'accepte de recevoir de la documentation de Radio-Canada.</Label>
+        </p>
+        <p class="message-erreur">
+        </p>
+        <button name="Enregistrer" value="Enregistrer">Enregistrer
+        </button>
+        <p class="copyright"><small><time>© 2022, Isaac Dubé.</time><br>Réalisé dans le cadre du cours Intégration 2,
+                Programme TIM, Cégep de Sainte-Foy.
+            </small>
+        </p>
