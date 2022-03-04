@@ -46,62 +46,67 @@
                     <legend>Nom complet</legend>
                     <p>
                         <label for="prénom">Prénom</label>
-                        <input for="texte" name="prénom" id="prénom">
+                        <input for="texte" name="prénom" id="prénom" required>
                     </p>
                     <p>
                         <label for="nom">Nom</Label>
-                        <input type="texte" name="nom" id="nom">
+                        <input type="texte" name="nom" id="nom" required>
                     </p>
                     <p class="message-erreur">
+                        Échantillion
                     </p>
                 </fieldset>
                 <p>
                     <label for="adresse">Adresse</Label>
-                    <input type="texte" name="adresse" id="adresse">
+                    <input type="texte" name="adresse" id="adresse" required>
                 </p>
                 <p class="message-erreur">
                 </p>
                 <p>
                     <label for="ville">Ville</label>
-                    <input type="texte" name="ville" id="ville">
+                    <input type="texte" name="ville" id="ville" required>
                 </p>
                 <p class="message-erreur">
                 </p>
                 <p>
                     <label for="pays">Pays</label>
-                    <select name="pays" id="pays">
+                    <select name="pays" id="pays" required>
                         <option value="province">Province</option>
                         <option value="etat">État</option>
                     </select>
                 </p>
                 <p class="message-erreur">
+                    Échantillion
                 </p>
                 <p>
                     <label for="codepostal">Code postal (X1X 1X1)</label>
-                    <input type="text" id="codepostal" name="codepostal" aria-label="111">
+                    <input type="text" id="codepostal" name="codepostal" aria-label="111" required minlength="6" maxlength="6">
                 </p>
                 <p class="message-erreur">
+                    Échantillion
                 </p>
                 <p>
                     <label for="courriel">Courriel</label>
-                    <input type="courriel" name="courriel" id="courriel">
+                    <input type="courriel" name="courriel" id="courriel" required>
                 </p>
                 <p class="message-erreur">
+                    Échantillion
                 </p>
                 <fieldset>
                     <legend>Téléphone (indicatif - numéro)</legend>
                     <p>
                         <label for="indicatif">Indicatif</label>
-                        <input type="tel" name="indicatif" id="indicatif" aria-label="111">
+                        <input type="tel" name="indicatif" id="indicatif" aria-label="111" required minlength="3" maxlength="3">
                     </p>
                     <p>
                         -
                     </p>
                     <p>
                         <label for="numéro">Numéro</Label>
-                        <input type="tel" name="numéro" id="numéro" aria-label="1111-111">
+                        <input type="tel" name="numéro" id="numéro" aria-label="1111111" required minlength="7" maxlength="7">
                     </p>
                     <p class="message-erreur">
+                        Échantillion
                     </p>
                 </fieldset>
             </fieldset>
@@ -111,11 +116,11 @@
                     <legend>Date à laquelle la question a été posée</legend>
                     <p>
                         <label for="jour">Jour</Label>
-                        <input type="text" name="jour" id="jour">
+                        <input type="text" name="jour" id="jour" required>
                     </p>
                     <p>
                         <label for="Mois">Mois</label>
-                        <select name="Mois" id="Mois">
+                        <select name="Mois" id="Mois" required>
                             <option value="Janvier">Janvier</option>
                             <option value="Fevrier">Février</option>
                             <option value="Mars">Mars</option>
@@ -132,13 +137,14 @@
                     </p>
                     <p>
                         <label for="annee">Année</Label>
-                        <input type="text" name="annee" id="annee">
+                        <input type="text" name="annee" id="annee" required>
                     </p>
                     <p class="message-erreur">
+                        Échantillion
                     </p>
                 </fieldset>
                 <fieldset>
-                    <legend>Lequel de ces monuments est un mausolée</legend>
+                    <legend>Lequel de ces monuments est un mausolée</legend required>
                     <ul>
                         <li>
                             <input type="radio" name="If" id="If">
@@ -159,24 +165,27 @@
                         </li>
                     </ul>
                     <p class="message-erreur">
+                        Échantillion
                     </p>
                 </fieldset>
             </fieldset>
         </main>
         <footer class="footer">
             <p>
-                <input type="checkbox" name="reglements" id="reglements">
+                <input type="checkbox" name="reglements" id="reglements" required>
                 <label for="reglements">J'ai lu et j'accepte le <a href="">règlement du concours</a> et je confirme
                     avoir
                     atteint l'âge de majorité dans ma province de résidence</Label>
             </p>
             <p class="message-erreur">
+                Échantillion
             </p>
             <p>
                 <input type="checkbox" name="reglements" id="reglements">
                 <label for="reglements">Oui j'accepte de recevoir de la documentation de Radio-Canada.</Label>
             </p>
             <p class="message-erreur">
+                Échantillion
             </p>
             <button name="Enregistrer" value="Enregistrer">Enregistrer
             </button>
