@@ -45,13 +45,13 @@
         <form action="index.html">
             <fieldset>
                 <legend class="h2">Coupon de participation</legend>
-                <fieldset>
+                <fieldset class="nom-complete">
                     <legend>Nom complet</legend>
-                    <p>
+                    <p class="prenom"> 
                         <label for="prénom">Prénom</label>
                         <input for="texte" name="prénom" id="prénom" pattern="[a-zA-ZÀ-ÿ \-]+" required>
                     </p>
-                    <p>
+                    <p class="nom">
                         <label for="nom">Nom</Label>
                         <input type="texte" name="nom" id="nom" pattern="[a-zA-ZÀ-ÿ \-]+" required>
                     </p>
@@ -59,19 +59,19 @@
                         Échantillion
                     </p>
                 </fieldset>
-                <p>
+                <p class="adresse">
                     <label for="adresse">Adresse</Label>
                     <input type="texte" name="adresse" id="adresse" required>
                 </p>
                 <p class="message-erreur">
                 </p>
-                <p>
+                <p class="ville">
                     <label for="ville">Ville</label>
                     <input type="texte" name="ville" id="ville" required>
                 </p>
                 <p class="message-erreur">
                 </p>
-                <p>
+                <p class="region">
                     <label for="pays">Pays</label>
                     <select name="pays" id="pays" required>
                         <option value="">Choisir une option</option>
@@ -146,30 +146,30 @@
                 <p class="message-erreur">
                     Échantillion
                 </p>
-                <p>
+                <p class="code-postal">
                     <label for="codepostal">Code postal (X1X 1X1)</label>
                     <input type="text" id="codepostal" name="codepostal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required minlength="6" maxlength="6">
                 </p>
                 <p class="message-erreur">
                     Échantillion
                 </p>
-                <p>
+                <p class="courriel">
                     <label for="courriel">Courriel</label>
                     <input type="email" name="courriel" id="courriel" required>
                 </p>
                 <p class="message-erreur">
                     Échantillion
                 </p>
-                <fieldset>
+                <fieldset class="telephone">
                     <legend>Téléphone (indicatif - numéro)</legend>
-                    <p>
+                    <p class="indicatif">
                         <label for="indicatif">Indicatif</label>
                         <input type="tel" name="indicatif" id="indicatif" required minlength="3" maxlength="3">
                     </p>
                     <p>
                         -
                     </p>
-                    <p>
+                    <p class="numero"> 
                         <label for="numéro">Numéro</Label>
                         <input type="tel" name="numéro" id="numéro"  required minlength="7" maxlength="7">
                     </p>
@@ -178,15 +178,15 @@
                     </p>
                 </fieldset>
             </fieldset>
-            <fieldset>
+            <fieldset class="question">
                 <legend class="h3">Question du jour</legend>
-                <fieldset>
+                <fieldset class="date">
                     <legend>Date à laquelle la question a été posée</legend>
-                    <p>
+                    <p class="jour">
                         <label for="jour">Jour</Label>
                         <input type="number" name="jour" id="jour" required>
                     </p>
-                    <p>
+                    <p class="mois">
                         <label for="Mois">Mois</label>
                         <select name="Mois" id="Mois" required>
                             <option value="">Sélectionner</option>
@@ -204,7 +204,7 @@
                             <option value="Décembre">Décembre</option>
                         </select>
                     </p>
-                    <p>
+                    <p class="annee">
                         <label for="annee">Année</Label>
                         <input type="number" name="annee" id="annee" required>
                     </p>
@@ -212,22 +212,22 @@
                         Échantillion
                     </p>
                 </fieldset>
-                <fieldset>
+                <fieldset class="question_posee">
                     <legend>Lequel de ces monuments est un mausolée</legend required>
                     <ul>
-                        <li>
+                        <li class="if">
                             <input type="radio" name="If" id="If">
                             <label for="If"><img class="image-question" src="./images/chateaudIf-small.jpg">Le château
                                 de
                                 d'If</Label>
                         </li>
-                        <li>
+                        <li class="luxembourg">
                             <input type="radio" name="Luxembourg" id="Luxembourg">
                             <label for="Luxembourg"><img class="image-question"
                                     src="./images/palaisluxembourg-small.jpg">Le
                                 palais de Luxembourg</Label>
                         </li>
-                        <li>
+                        <li class="taj_mahal">
                             <input type="radio" name="taj_Mahal" id="taj_Mahal">
                             <label for="taj_Mahal"><img class="image-question" src="./images/tajmahal-small.jpg">Le Taj
                                 Mahal</Label>
@@ -240,7 +240,7 @@
             </fieldset>
         </main>
         <footer class="footer">
-            <p>
+            <p class="reglements">
                 <input type="checkbox" name="reglements" id="reglements" required>
                 <label for="reglements">J'ai lu et j'accepte le <a href="./pdf/Reglements-Voyage-De-Reve-Au-Menu.pdf">règlement du concours</a> et je confirme
                     avoir
@@ -249,14 +249,14 @@
             <p class="message-erreur">
                 Échantillion
             </p>
-            <p>
-                <input type="checkbox" name="reglements" id="reglements">
-                <label for="reglements">Oui j'accepte de recevoir de la documentation de Radio-Canada.</Label>
+            <p class="documentation">
+                <input type="checkbox" name="documentation" id="documentation">
+                <label for="documentation">Oui j'accepte de recevoir de la documentation de Radio-Canada.</Label>
             </p>
             <p class="message-erreur">
                 Échantillion
             </p>
-            <button name="Enregistrer" value="Enregistrer" >
+            <button class="soummision" id="soummision" name="Enregistrer" value="Enregistrer" >
                 Enregistrer
             </button>
         </form>
