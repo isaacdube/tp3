@@ -1,4 +1,9 @@
 /* Utilitaires
+ *** Clearfix
+ *** Box-Sizing
+ *** images
+ *** Accessibilité
+ *** validations
    ========================================================================== */
 /*** Clearfix ***/
 .clearfix::after {
@@ -19,6 +24,7 @@ html {
 /*** Fluidifier les images ***/
 img{
     max-width: 100%;
+    display: block;
 }
 
 /** Accessibilité
@@ -46,4 +52,24 @@ img{
     overflow: visible;
     position: static;
     width: auto;
+}
+
+/*** validations ***/
+.icone{
+    display: inline-block;
+    width:24px;
+    height:24px;
+    background-image:url("../images/good-warning-error.png");
+    background-size: cover;
+    position: relative;
+    top:3px;
+}
+.icone--ok{
+    background-position:0 0;
+}
+.icone--avertissement{
+    background-position:49px 0;
+}
+.icone--erreur{
+    background-position:99px 0;
 }

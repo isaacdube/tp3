@@ -27,14 +27,171 @@
 
 /* Charte typographique
    ========================================================================== */
-
+   @import url(tp3_typo.css);
 
 /* Grille
    ========================================================================== */
-@import url(_normalize.css);
+@import url(_grille.css);
 
 /* Mise en page
    ========================================================================== */
  
+/* entête */
 
-   
+.picture__entete{
+   width: 100%;
+}
+
+/* main */
+
+.h1{
+   margin-top: 1rem;
+}
+
+.presentation--concours{
+   margin: 0px 10px 0px 10px;
+}
+
+@media (min-width: 600px) {
+   .layout-page {
+      max-width: 1000px;
+      margin: 0 auto;
+   }
+}
+
+.layout-page{
+   background-color:white;
+   box-shadow: 10px 5px 5px rgb(102, 102, 102);
+   padding-bottom: 3rem;
+}
+
+body{
+      background-image: linear-gradient(#00d4ff, #5aebb2);
+}
+
+
+/* formulaire */
+
+.form-coupon, .question{
+   border: none;
+   background-color: rgb(230, 230, 230);
+   border-radius: 1rem;
+}
+
+.message-erreur{
+   color: orangered;
+}
+
+fieldset {
+   border-radius: 2rem;
+   border-width: 0.4rem;
+   color:black;
+   margin-bottom: 3rem;
+}
+
+.legend{
+   padding-top: 2.5rem;
+}
+
+.h3{
+   padding: 0 1rem;
+}
+
+.liste--question{
+   padding-left: 0px;
+}
+
+li{
+   padding-bottom: 1rem;
+}
+
+.rangee{
+   list-style: none;
+}
+
+
+
+/* interactivité */
+
+label {
+   display: block;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+select 
+{
+   display: inline-block;
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+}
+
+input[type=radio]+label {
+   display: inline-block;  
+   text-align: center;
+   border:2px solid transparent;
+}
+
+[type=radio]:hover+label { 
+   cursor: pointer;
+}
+[type=radio]:hover+label,
+[type=radio]:focus+label { 
+   border:2px solid rgb(1, 92, 95);
+}
+[type=radio]:checked+label { 
+   border:2px solid rgb(1, 92, 95);
+}
+
+[type=radio]:hover+label img,
+[type=radio]:focus+label img { 
+   filter:grayscale(0);
+}
+
+[type=radio]+label img { 
+   filter:grayscale(1);
+}
+.date input {
+   padding: 0.85rem;
+}
+
+:focus {
+   outline: rgb(1, 92, 95) auto 10px;
+}
+
+.screen-reader-only, .visuallyhidden {
+   border: 0;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px;
+   }
+
+button{
+   padding: 0.5rem;
+   background-color: #d6dfcf;
+}
+button:hover,
+button:focus{
+   background-color:    lightgreen;
+}
+
+/* footer */
+
+.soummision{
+   border-radius: 15rem;
+   background-color: rgb(163, 221, 163);
+   padding: 1rem 1rem;
+}
+
+
+.copyright{
+   text-align: center;
+}
+
+
