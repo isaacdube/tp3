@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="descrption" content="Concours pour Voyager">
+    <meta name="description" content="Concours pour Voyager">
     <meta name="keywords" content="Voyager">
     <meta name="author" content="Isaac Dubé">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +53,7 @@
                         <div class="nom__complet rangee">
                             <p class="prenom cols_6_de_12">
                                 <label for="prenom">Prénom</label>
-                                <input class="inline" type="text" name="prénom" id="prénom" pattern="[a-zA-ZÀ-ÿ \-]+" required>
+                                <input class="inline" type="text" name="prenom" id="prenom" pattern="[a-zA-ZÀ-ÿ \-]+" required>
                             </p>
                             <p class="nom cols_6_de_12">
                                 <label for="nom">Nom</Label>
@@ -91,7 +91,7 @@
                         <label for="pays">Pays</label>
                         <select name="pays" id="pays" required>
                             <option value="">Choisir une option</option>
-                            <optgroup label="Canada"></optgroup>
+                            <optgroup label="Canada">
                             <option value="AB">Alberta</option>
                             <option value="BC">British Columbia</option>
                             <option value="MB">Manitoba</option>
@@ -105,7 +105,8 @@
                             <option value="NT">Northwest Territories</option>
                             <option value="NU">Nunavut</option>
                             <option value="YT">Yukon</option>
-                            <optgroup label="État-Unis"></optgroup>
+                            </optgroup>
+                            <optgroup label="État-Unis">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -157,6 +158,7 @@
                             <option value="WV">West Virginia</option>
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
+                            </optgroup>
                         </select>
                     </p>
                     <p class="message-erreur">
@@ -253,10 +255,13 @@
                         </p>
                     </fieldset>
                     <fieldset class="question_posee">
-                        <legend class="h3">Lequel de ces monuments est un mausolée</legend required>
+                        <legend class="h3">Lequel de ces monuments est un mausolée</legend>
                         <ul class="liste--question rangee">
                             <li class="cols_4_de_12">
-                                <input class="screen-reader-only" type="radio" name="If" id="If">
+<!--                                <input class="screen-reader-only" type="radio"-->
+<!--                                       name="If" id="If">-->
+                                <input class="screen-reader-only" type="radio"
+                                       name="monument" id="If">
                                 <label for="If"><picture class="picture">
                                     <source srcset="./images/chateaudIf.jpg" media="(max-width:600px)">
                                     <source srcset="./images/chateaudIf-small.jpg" media="(min-width:601px)">
@@ -270,7 +275,10 @@
                                     d'If</Label>
                             </li>
                             <li class="cols_4_de_12">
-                                <input class="screen-reader-only" type="radio" name="Luxembourg" id="Luxembourg">
+<!--                                <input class="screen-reader-only" type="radio"-->
+<!--                                       name="Luxembourg" id="Luxembourg">-->
+                                <input class="screen-reader-only" type="radio"
+                                       name="monument" id="Luxembourg">
                                 <label for="Luxembourg"><picture class="picture">
                                     <source srcset="./images/palaisluxembourg.jpg" media="(max-width:600px)">
                                     <source srcset="./images/palaisluxembourg-small.jpg" media="(min-width:601px)">
@@ -282,7 +290,10 @@
                                     palais de Luxembourg</Label>
                             </li>
                             <li class="cols_4_de_12">
-                                <input class="screen-reader-only" type="radio" name="taj_Mahal" id="taj_Mahal">
+<!--                                <input class="screen-reader-only" type="radio" -->
+<!--                                       name="taj_Mahal" id="taj_Mahal">-->
+                                <input class="screen-reader-only" type="radio"
+                                       name="monument" id="taj_Mahal">
                                 <label for="taj_Mahal"><picture class="picture">
                                     <source srcset="./images/tajmahal.jpg" media="(max-width:600px)">
                                     <source srcset="./images/tajmahal-small.jpg" media="(min-width:601px)">
@@ -305,8 +316,8 @@
                 </fieldset>
                 <div class="checkbox">
                     <p class="reglements">
-                        <input type="checkbox" name="reglements" id="reglements" required>
-                        <label for="reglements">J'ai lu et j'accepte le <a
+                        <label for="reglements"><input type="checkbox" name="reglements" id="reglements" required>
+                        J'ai lu et j'accepte le <a
                                 href="./pdf/Reglements-Voyage-De-Reve-Au-Menu.pdf">règlement du concours</a> et je
                             confirme
                             avoir
@@ -327,8 +338,8 @@
                         Soumettre le formulaire
                     </button>
                 </div>
+            </form>
         </main>
-        </form>
     </div>
         <footer>
             <p class="copyright"><small><time>© 2022, Isaac Dubé.</time><br>Réalisé dans le cadre du cours Intégration

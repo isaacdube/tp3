@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * @author Prénom Nom courriel
+ * @author IsaacDube courriel
  *
  * TABLE DES MATIERES
  * Normalize
@@ -19,19 +19,19 @@
 
 /* Normalize
    ========================================================================== */
-@import url(_normalize.css);
+@import url(normalize.css);
 
 /* Utilitaires
    ========================================================================== */
-@import url(_utilitaires.css);
+@import url(utilitaires.css);
 
 /* Charte typographique
    ========================================================================== */
-   @import url(tp3_typo.css);
+   @import url(typo.css);
 
 /* Grille
    ========================================================================== */
-@import url(_grille.css);
+@import url(grille.css);
 
 /* Mise en page
    ========================================================================== */
@@ -49,7 +49,7 @@
 }
 
 .presentation--concours{
-   margin: 0px 10px 0px 10px;
+   margin: 0 10px 0 10px;
 }
 
 @media (min-width: 600px) {
@@ -98,7 +98,7 @@ fieldset {
 }
 
 .liste--question{
-   padding-left: 0px;
+   padding-left: 0;
 }
 
 li{
@@ -115,6 +115,9 @@ li{
 
 label {
    display: block;
+}
+input[type=checkbox]+label {
+   display: inline-block;
 }
 input[type=text],
 input[type=email],
